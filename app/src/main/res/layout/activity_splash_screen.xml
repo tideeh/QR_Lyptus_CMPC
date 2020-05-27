@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:id="@+id/splash_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imagem_logo"
+        app:srcCompat="@drawable/qr_code_cmpc_logo_min" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/my_progress_bar"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/splash_texto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/splash_texto2"
+            android:layout_alignBottom="@id/splash_texto2"
+            android:layout_toStartOf="@id/splash_texto2"
+            android:fontFamily="sans-serif-medium"
+            android:text="QR"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/splash_texto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_simbol"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text=" LYPTUS"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView
+            android:layout_marginBottom="-15dp"
+            android:id="@+id/register_simbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/splash_texto2"
+            android:fontFamily="sans-serif-medium"
+            android:text="®"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:typeface="normal" />
+
+    </RelativeLayout>
+
+    <!--
+    <TextView
+        android:id="@+id/splash_version_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/exo_2"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="12sp" />
+     -->
+
+    <TextView
+        android:id="@+id/splash_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/exo_2"
+        android:text="Pólen Startup Florestal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="12sp" />
+
+</LinearLayout>

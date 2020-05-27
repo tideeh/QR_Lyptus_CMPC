@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:checkable="false"
+            android:id="@+id/nav_item1"
+            android:title="Pesquisar"
+            android:icon="@drawable/tree_menu" />
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:checkable="false"
+            android:id="@+id/nav_item2"
+            android:title="menu 2" />
+        <!-- android:icon="@drawable/ic_action_pick" -->
+    </group>
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+        <item
+            android:checkable="false"
+            android:id="@+id/nav_item3"
+            android:title="menu 3" />
+        <!-- android:icon="@drawable/ic_action_pick" -->
+    </group>
+
+    <group
+        android:id="@+id/group4"
+        android:checkableBehavior="single">
+        <item
+            android:checkable="false"
+            android:id="@+id/nav_item4"
+            android:title="menu 4" />
+        <!-- android:icon="@drawable/ic_action_pick" -->
+    </group>
+
+</menu>

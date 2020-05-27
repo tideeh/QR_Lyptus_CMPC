@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="7dp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryLight"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:text="Pólen Startup Florestal\nQR Lyptus © 2020\nTodos os direitos reservados"
+        android:textSize="10sp" />
+</LinearLayout>

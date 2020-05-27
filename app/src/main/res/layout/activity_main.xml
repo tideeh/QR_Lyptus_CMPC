@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_for_activity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/hp_simplified"
+                    android:gravity="center"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:text="Realizar nova leitura QR"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/btnQRScan"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:onClick="btnScan"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/colorPrimary"
+                    app:srcCompat="@drawable/qr_code2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/hp_simplified"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="Bem vindo ao QR Lyptus, seu croqui 4.0.\nClique no ícone acima para fazer uma nova leitura, ou selecione uma das opções abaixo."
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_locais_salvos"
+                    style="@style/my_button_main"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Locais Salvos" />
+
+                <Button
+                    android:id="@+id/btn_ultimos_comentarios"
+                    style="@style/my_button_main"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Últimos Comentários" />
+
+                <Button
+                    android:id="@+id/btn_portal_coordenador"
+                    style="@style/my_button_main"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Portal do Coordenador" />
+
+                <Button
+                    android:id="@+id/btn_ajuda"
+                    style="@style/my_button_main"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Ajuda" />
+
+                <Button
+                    android:id="@+id/btn_sobre_qr_lyptus"
+                    style="@style/my_button_main"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/sobre_o_qr_lyptus" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            android:id="@+id/footer"
+            layout="@layout/footer_for_activity" />
+
+    </LinearLayout>
+
+</LinearLayout>

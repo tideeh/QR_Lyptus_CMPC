@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "479748330177",
+    "firebase_url": "https://qr-lyptus-cmpc.firebaseio.com",
+    "project_id": "qr-lyptus-cmpc",
+    "storage_bucket": "qr-lyptus-cmpc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479748330177:android:798b172472e9e7d2e8ba40",
+        "android_client_info": {
+          "package_name": "br.com.polenflorestal.qrcodecmpc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479748330177-leg38qoj56s22a46gin8kmi8at8ti6hf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.polenflorestal.qrcodecmpc",
+            "certificate_hash": "e3aaec973184a9ba7fd531f1d65392b75a989e0e"
+          }
+        },
+        {
+          "client_id": "479748330177-43afd9ktrhk5lr122v2fcn4e0p2sr6u2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-sKINN05KYxqLEr2DHIOHXbjuGiKdTo8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479748330177-43afd9ktrhk5lr122v2fcn4e0p2sr6u2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
