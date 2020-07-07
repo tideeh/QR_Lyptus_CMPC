@@ -1,4 +1,4 @@
-package br.com.polenflorestal.qrcodecmpc;
+package br.com.polenflorestal.qrcodecmpc.utils;
 /*
 Utilitario para exibir Toast sobrepondo o anterior (caso haja)
 Foi preciso criar isso porque um toast so estava aparecendo quando o anterior acabava

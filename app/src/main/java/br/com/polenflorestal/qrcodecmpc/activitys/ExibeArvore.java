@@ -1,4 +1,4 @@
-package br.com.polenflorestal.qrcodecmpc;
+package br.com.polenflorestal.qrcodecmpc.activitys;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -30,9 +30,13 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
-import static br.com.polenflorestal.qrcodecmpc.Constants.EMPRESA_NOME;
+import br.com.polenflorestal.qrcodecmpc.R;
+import br.com.polenflorestal.qrcodecmpc.utils.DataBaseOnlineUtil;
+import br.com.polenflorestal.qrcodecmpc.utils.DataBaseUtil;
+import br.com.polenflorestal.qrcodecmpc.utils.ToastUtil;
+
+import static br.com.polenflorestal.qrcodecmpc.utils.Constants.EMPRESA_NOME;
 
 public class ExibeArvore extends AppCompatActivity {
     private String codigo;

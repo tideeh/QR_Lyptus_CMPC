@@ -1,10 +1,9 @@
-package br.com.polenflorestal.qrcodecmpc
+package br.com.polenflorestal.qrcodecmpc.activitys
 
 import android.Manifest
 import android.content.DialogInterface
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.os.Build
 import android.os.Bundle
 import android.text.Html
 import android.view.View
@@ -16,7 +15,8 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import br.com.polenflorestal.qrcodecmpc.Constants.*
+import br.com.polenflorestal.qrcodecmpc.R
+import br.com.polenflorestal.qrcodecmpc.utils.Constants.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -71,7 +71,9 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra(QR_CAMERA_BORDER_COLOR, "#C1000000")
         intent.putExtra(QR_IS_SCAN_BAR, true)
         intent.putExtra(QR_IS_BEEP, true)
-        intent.putExtra(QR_BEEP_RESOURCE_ID, R.raw.beep)
+        intent.putExtra(QR_BEEP_RESOURCE_ID,
+            R.raw.beep
+        )
 
         startActivityForResult(intent, QR_QR_SCANNER_REQUEST)
 

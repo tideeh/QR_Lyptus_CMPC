@@ -1,4 +1,4 @@
-package br.com.polenflorestal.qrcodecmpc
+package br.com.polenflorestal.qrcodecmpc.activitys
 
 import android.content.Context
 import android.content.Intent
@@ -8,7 +8,11 @@ import android.os.Bundle
 import android.os.Handler
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import br.com.polenflorestal.qrcodecmpc.Constants.*
+import br.com.polenflorestal.qrcodecmpc.BuildConfig
+import br.com.polenflorestal.qrcodecmpc.R
+import br.com.polenflorestal.qrcodecmpc.utils.Constants.*
+import br.com.polenflorestal.qrcodecmpc.utils.DataBaseOnlineUtil
+import br.com.polenflorestal.qrcodecmpc.utils.DataBaseUtil
 
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -24,7 +28,8 @@ class SplashScreenActivity : AppCompatActivity() {
         sharedPreferences = getSharedPreferences(SP_NOME, Context.MODE_PRIVATE)
 
         versionName = packageManager.getPackageInfo(packageName, 0).versionName
-        currentVersionCode = BuildConfig.VERSION_CODE
+        currentVersionCode =
+            BuildConfig.VERSION_CODE
 
         Log.i("SPLASH_SCREEN", "CurrentVersionName: $versionName")
         Log.i("SPLASH_SCREEN", "CurrentVersionCode: $currentVersionCode")

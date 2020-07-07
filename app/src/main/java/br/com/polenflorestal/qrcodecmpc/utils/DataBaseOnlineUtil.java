@@ -1,4 +1,4 @@
-package br.com.polenflorestal.qrcodecmpc;
+package br.com.polenflorestal.qrcodecmpc.utils;
 
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;

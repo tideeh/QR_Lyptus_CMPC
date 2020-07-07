@@ -1,17 +1,18 @@
-package br.com.polenflorestal.qrcodecmpc;
+package br.com.polenflorestal.qrcodecmpc.activitys;
 
 
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import java.util.Objects;
+
+import br.com.polenflorestal.qrcodecmpc.R;
+import br.com.polenflorestal.qrcodecmpc.utils.ToastUtil;
 
 public class Croqui extends AppCompatActivity {
     private int arvorePos = 0;

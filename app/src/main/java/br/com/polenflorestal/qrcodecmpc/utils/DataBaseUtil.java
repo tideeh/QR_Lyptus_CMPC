@@ -1,4 +1,4 @@
-package br.com.polenflorestal.qrcodecmpc;
+package br.com.polenflorestal.qrcodecmpc.utils;
 
 import android.content.ContentValues;
 import android.content.Context;

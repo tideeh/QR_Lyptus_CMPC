@@ -1,4 +1,4 @@
-package br.com.polenflorestal.qrcodecmpc
+package br.com.polenflorestal.qrcodecmpc.activitys
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -14,7 +14,8 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.RelativeLayout
 import androidx.appcompat.app.AppCompatActivity
-import br.com.polenflorestal.qrcodecmpc.Constants.*
+import br.com.polenflorestal.qrcodecmpc.R
+import br.com.polenflorestal.qrcodecmpc.utils.Constants.*
 import com.google.android.gms.vision.CameraSource
 import com.google.android.gms.vision.Detector
 import com.google.android.gms.vision.barcode.Barcode
@@ -112,7 +113,9 @@ class QRScanner : AppCompatActivity() {
             if (beep_resource_id > 0) {
                 mp = MediaPlayer.create(applicationContext, beep_resource_id)
             } else {
-                mp = MediaPlayer.create(applicationContext, R.raw.beep)
+                mp = MediaPlayer.create(applicationContext,
+                    R.raw.beep
+                )
             }
         }
     }
@@ -121,7 +124,9 @@ class QRScanner : AppCompatActivity() {
         val vScanBar: View = findViewById(R.id.vScanBar)
         vScanBar.visibility = View.VISIBLE
         val animation =
-            AnimationUtils.loadAnimation(this@QRScanner, R.anim.anim_scan_effect)
+            AnimationUtils.loadAnimation(this@QRScanner,
+                R.anim.anim_scan_effect
+            )
         animation.setAnimationListener(object : Animation.AnimationListener {
             override fun onAnimationStart(animation: Animation) {}
             override fun onAnimationEnd(animation: Animation) {
